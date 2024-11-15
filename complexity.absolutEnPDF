@@ -15,7 +15,7 @@ n*(n+1)(2n+1)/6
 (n+1)(2n^2+7n+6)/6 = (n+1)*(n+2)(2n+3)/6
 (n+1)(n+2)(2n+3)/6 = (n+1)*(n+2)(2n+3)/6
 
-boom VSB
+nu fungerar det för alla n>=1
 
 
 Matte1:
@@ -35,13 +35,22 @@ så det fungerar för alla n>=1
 
 
 2.
-O(N)
+O(N) for loop går igenom n gånger
 Uppenbarligen är 
 x*x…x (n gånger) lika med x^n
 
 
 
 3.
-O(N)
+ljupet är log n då man delar med 2 varje gång
+antal noder vid ljup x är 2^x
+2^(log n) = n
+2^((log n)-1) = n/2
+2^((log n)-2) = n/4
+...
+2^0 = 1
+
+summan blir 2n
+alltså: O(N) 
 
 n/2 avrundat ner + (n+1)/2 avrundat ner blir n. och x^a*x^b = x^(a+b)
