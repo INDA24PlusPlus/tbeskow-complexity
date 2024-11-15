@@ -1,0 +1,47 @@
+Matte1:
+
+basfall n = 1:
+1 = 1*2*3/6 = 1
+
+induktion:
+
+for i in 1..n(inklusive):
+	i^2
+=
+n*(n+1)(2n+1)/6
+
+(n+1)^2+n*(n+1)(2n+1)/6 = (n+1)*(n+2)(2n+3)/6
+(n+1)(n*(2n+1)+6(n+1))/6 = (n+1)*(n+2)(2n+3)/6
+(n+1)(2n^2+7n+6)/6 = (n+1)*(n+2)(2n+3)/6
+(n+1)(n+2)(2n+3)/6 = (n+1)*(n+2)(2n+3)/6
+
+boom VSB
+
+
+Matte1:
+
+basfall n = 1:
+2-1 = i^2 = 1
+
+induktion:
+
+(2n+1)+n^2 = (n+1)^2
+n^2+2n+1 = (n+1)^2
+(n+1)^2 = (n+1)^2 
+
+så det fungerar för alla n>=1
+
+
+
+
+2.
+O(N)
+Uppenbarligen är 
+x*x…x (n gånger) lika med x^n
+
+
+
+3.
+O(N)
+
+n/2 avrundat ner + (n+1)/2 avrundat ner blir n. och x^a*x^b = x^(a+b)
